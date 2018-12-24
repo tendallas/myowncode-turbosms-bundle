@@ -1,0 +1,55 @@
+{
+  "name": "myowncode/symfony-turbosms",
+  "type": "symfony-bundle",
+  "description": "Turbosms service client for Symfony applications",
+  "keywords": ["backend", "client", "turbosms"],
+  "homepage": "https://github.com/tendallas/myowncode-turbosms-bundle.git",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrii Frolov",
+      "email": "tendallas@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "doctrine/cache": "~1.5",
+    "doctrine/dbal": "~2.3",
+    "doctrine/doctrine-bundle": "~1.2",
+    "doctrine/orm": "~2.3",
+    "psr/log": "^1.0",
+    "symfony/config": "^4.0",
+    "symfony/dependency-injection": "^4.0",
+    "symfony/doctrine-bridge": "^4.0",
+    "symfony/framework-bundle": "^4.0",
+    "symfony/polyfill-mbstring": "^1.0",
+    "symfony/translation": "^4.0",
+    "symfony/validator": "^4.0"
+  },
+  "require-dev": {
+    "doctrine/doctrine-fixtures-bundle": "~2.2",
+    "psr/log": "~1.0",
+    "symfony/console": "~2.3|~3.0|^4.0",
+    "symfony/phpunit-bridge": "^3.2|^4.0",
+    "symfony/var-dumper": "~2.3|~3.0|^4.0",
+    "symfony/yaml": "~2.3|~3.0|^4.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Myowncode\\TurboSmsBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Myowncode\\TurboSmsBundle\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}

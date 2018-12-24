@@ -1,0 +1,8 @@
+services:
+  turbosms:
+    alias: myowncode_turbosms
+
+  myowncode_turbosms:
+    class: Myowncode\TurboSmsBundle\Service\TurboSms
+    public: true
+    arguments: ["@doctrine.orm.entity_manager", "@translator", "@service_container"]
