@@ -144,7 +144,7 @@ class TurboSms
             return false;
         }
         $model = new TurboSmsSent();
-        $model->setStatusMessage($message  . ' ' . ($this->debug ? $this->trans('(тестовый режим)') : ''));
+        $model->setStatusMessage($message  . ' ' . ($this->debug ? $this->trans('test mode') : ''));
         $model->setMessage($text);
         $model->setPhone($phone);
         $model->setCreatedAt(new \DateTime());
