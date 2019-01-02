@@ -117,7 +117,7 @@ class TurboSms
         $password = $this->container->getParameter('myowncode.turbosms.password');
         $client = new SoapTurboSmsStub($this->wsdl);
         if (!$login || !$password) {
-            throw new \Exception($this->trans('Введите имя пользователя и пароль от Turbosms.'));
+            throw new \Exception($this->trans('Enter username and password for Turbosms'));
         }
         $result = $client->Auth([
             'login' => $login,
@@ -203,7 +203,7 @@ class TurboSms
      */
     private function sendMessage($text, $phone): string
     {
-        $message = $this->trans('Сообщения успешно отправлено.');
+        $message = $this->trans('Message success sent');
         $this->sendStatus = true;
         $this->lastSendMessageId = '';
         if ($this->debug) {
@@ -223,7 +223,7 @@ class TurboSms
             $this->sendStatus = false;
             // @todo delete preg_replace
             $message = preg_replace('/%error%/i', $result->SendSMSResult->ResultArray,
-                $this->trans('Сообщения не отправлено (ошибка: "%error%").'));
+                $this->trans('Message did not send (error: "%error%").'));
         }
         return $message;
     }
