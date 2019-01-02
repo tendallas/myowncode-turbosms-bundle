@@ -1,4 +1,4 @@
-'(тестовый режим)': '(test mode)'
-'Сообщения успешно отправлено.': 'Messages successfully sent.'
-'Сообщения не отправлено (ошибка: "%error%").': 'Messages was not sent (error: "% error%")'.
-'Введите имя пользователя и пароль от Turbosms.': 'Enter login and password from TurboSms.'
+test mode: '(test mode)'
+Message success sent: 'Messages successfully sent.'
+'Message did not send (error: "%error%").': 'Messages was not sent (error: "% error%")'.
+'Enter username and password for Turbosms': 'Enter login and password from TurboSms.'
